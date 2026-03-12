@@ -83,4 +83,4 @@ llm-eda-app/
 
 ## 🙋 Author
 
-Built with ❤️ using Gradio + Ollama. Perfect **Data Science enthusiasts** exploring EDA with local AI.
+Built with using Gradio + Ollama. Perfect **Data Science enthusiasts** exploring EDA with local AI.
