@@ -2,17 +2,17 @@
 
 An AI-powered EDA tool that runs **entirely on your local machine** — no cloud, no API keys, no cost. Upload any CSV and instantly get automatic data cleaning, statistical summaries, visualizations, and AI-generated insights.
 
-## 🚀 Features
+## Features
 - **Auto Data Cleaning** — fills missing numeric values with median, text values with mode
 - **Statistical Summary** — full `describe()` output with shape, column types, and distributions
 - **Smart Visualizations** — histogram per numeric column + correlation heatmap
 - **AI Insights** — powered by a local LLM via Ollama (no internet required)
 - **Simple UI** — clean Gradio web interface, just upload and click
 
-## 🖥️ Demo
+## Demo
 > Upload a CSV → Click Analyze → Get a full EDA report + charts in seconds
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool                                                                     | Purpose                   |
 | ------------------------------------------------------------------------ | ------------------------- |
@@ -22,7 +22,7 @@ An AI-powered EDA tool that runs **entirely on your local machine** — no cloud
 | [Ollama](https://ollama.com/)                                               | Local LLM inference       |
 | `tinyllama` / `phi3` / `mistral`                                   | AI insight generation     |
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### 1. Install Python Dependencies
 
@@ -59,7 +59,7 @@ python app.py
 ```
 Then open your browser at `http://localhost:7860`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 llm-eda-app/
@@ -67,7 +67,7 @@ llm-eda-app/
 ├── app.py          # Main application
 └── README.md       # This file
 ```
-## 💡 How It Works
+## How It Works
 
 1. **Upload** a `.csv` file via the Gradio UI
 2. **Clean** — missing values are auto-filled (median for numbers, mode for text)
@@ -75,15 +75,11 @@ llm-eda-app/
 4. **Visualize** — up to 6 histograms + 1 correlation heatmap are rendered
 5. **AI Insights** — a compact summary is sent to your local LLM, which returns 4 bullet-point insights about the dataset
 
-## 📝 Note
+## Note
 
 - Only the **first 10 numeric columns** are sent to the AI to keep responses fast
 - Charts are limited to **6 histograms** to avoid long render times on wide datasets
 - All processing is done **locally** — your data never leaves your machine
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
 
 ## 🙋 Author
 
